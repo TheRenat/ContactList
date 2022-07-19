@@ -7,9 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    let person = Person.getPerson()
+class FullInfoViewController: UIViewController {
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

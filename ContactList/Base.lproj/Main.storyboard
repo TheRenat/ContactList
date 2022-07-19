@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,6 +24,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="PHH-OH-LR8" kind="show" id="ojF-d5-ulk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -117,6 +121,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsT-h0-eGe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2953" y="-2130"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="To3-Kf-7ma">
+            <objects>
+                <viewController id="PHH-OH-LR8" customClass="FullInfoViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Spi-Ig-alc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dPp-1O-5SU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contact" id="DkO-Lk-uvR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnw-ca-rP4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3746" y="-608"/>
         </scene>
     </scenes>
     <resources>
