@@ -8,12 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let person = Person.getPerson()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
 

@@ -6,8 +6,21 @@
 //
 
 struct Person {
-    let name: String
-    let surname: String
-    let email: String
-    let phoneNumber: String
+    var name: [String]
+    var surname: [String]
+    var email: [String]
+    var phoneNumber: [String]
+    
+    static func getPerson() -> Person {
+        let randomPerson = DataStore()
+        
+        return Person(
+            name: randomPerson.names.shuffled(),
+            surname: randomPerson.surnames.shuffled(),
+            email: randomPerson.emails.shuffled(),
+            phoneNumber: randomPerson.phoneNumbers.shuffled()
+        )
+    }
 }
+
+

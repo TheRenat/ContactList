@@ -8,6 +8,8 @@
 import UIKit
 
 class ContactListViewController: UITableViewController {
+    
+    var person = Person.getPerson()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +28,12 @@ class ContactListViewController: UITableViewController {
 //    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        person.name.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
-        cell.textLabel?.text = "Cell index: \(indexPath.row)"
+        cell.textLabel?.text = "\(person.name.removeFirst()) \(person.surname.removeFirst())"
         return cell
     }
 
