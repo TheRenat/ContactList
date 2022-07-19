@@ -129,10 +129,34 @@
                     <view key="view" contentMode="scaleToFill" id="Spi-Ig-alc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTh-Ke-9NG">
+                                <rect key="frame" x="16" y="116" width="52" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INh-dS-gdL">
+                                <rect key="frame" x="16" y="182.5" width="52" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dPp-1O-5SU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="INh-dS-gdL" firstAttribute="top" secondItem="PTh-Ke-9NG" secondAttribute="bottom" constant="40" id="3dw-Tm-92r"/>
+                            <constraint firstItem="INh-dS-gdL" firstAttribute="leading" secondItem="dPp-1O-5SU" secondAttribute="leading" constant="16" id="ivw-cE-0rm"/>
+                            <constraint firstItem="PTh-Ke-9NG" firstAttribute="top" secondItem="dPp-1O-5SU" secondAttribute="top" constant="20" id="kE7-g2-61k"/>
+                            <constraint firstItem="PTh-Ke-9NG" firstAttribute="leading" secondItem="dPp-1O-5SU" secondAttribute="leading" constant="16" id="lLf-eg-KU4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Contact" id="DkO-Lk-uvR"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="INh-dS-gdL" id="keM-bh-sbb"/>
+                        <outlet property="phoneNumberLabel" destination="PTh-Ke-9NG" id="n30-dP-iBC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jnw-ca-rP4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

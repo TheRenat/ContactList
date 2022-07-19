@@ -9,10 +9,17 @@ import UIKit
 
 class FullInfoViewController: UIViewController {
 
-
+    @IBOutlet var phoneNumberLabel: UILabel!
+    @IBOutlet var emailLabel: UILabel!
+    
+    var person: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        navigationItem.title = "\(person.name.randomElement())"
+        phoneNumberLabel.text = ""
+        
+
     }
 }
 
