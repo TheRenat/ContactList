@@ -16,7 +16,7 @@ class FullInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "\(person.name.randomElement())"
+        //navigationItem.title = person
         phoneNumberLabel.text = ""
         
 
