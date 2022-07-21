@@ -39,10 +39,10 @@ class ContactListViewController: UITableViewController {
 
     // MARK: - Navigation
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let fullInfoVC = segue.destination as? FullInfoViewController else { return }
-//        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-//        fullInfoVC.person = person[indexPath.row]
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let fullInfoVC = segue.destination as? FullInfoViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        fullInfoVC.person = person[indexPath.row]
         
     }
 }
