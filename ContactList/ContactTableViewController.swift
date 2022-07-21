@@ -34,7 +34,6 @@ class ContactTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "phone", for: indexPath)
-        //let celltwo = tableView.dequeueReusableCell(withIdentifier: "email", for: indexPath)
         return cell
     }
     
