@@ -13,16 +13,16 @@ class ContactListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        person.name.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "fullName", for: indexPath)
-        cell.textLabel?.text = "\(person.name.removeFirst()) \(person.surname.removeFirst())"
-        return cell
-    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        person.name.count
+//    }
+//
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "fullName", for: indexPath)
+//        cell.textLabel?.text = "\(person.name.removeFirst()) \(person.surname.removeFirst())"
+//        return cell
+//    }
 
     // MARK: - Navigation
 
