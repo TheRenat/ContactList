@@ -6,19 +6,48 @@
 //
 
 struct Person {
-    var name: [String]
-    var surname: [String]
-    var email: [String]
-    var phoneNumber: [String]
+    let name: String
+    let surname: String
+    let email: String
+    let phoneNumber: String
     
-    static func getPerson() -> Person {
-        let randomPerson = DataStore()
+    var fullName: String {
+        "\(name) \(surname)"
+    }
+}
+
+extension Person {
+    static func getContactPerson() -> [Person] {
         
-        return Person(
-            name: randomPerson.names.shuffled(),
-            surname: randomPerson.surnames.shuffled(),
-            email: randomPerson.emails.shuffled(),
-            phoneNumber: randomPerson.phoneNumbers.shuffled()
+        var persons: [Person] = []
+        
+        let names = DataStore.shared.names.shuffled()
+        let surnames = DataStore.shared.surnames.shuffled()
+        let emails = DataStore.shared.emails.shuffled()
+        let phones = DataStore.shared.phones.shuffled()
+        
+        let iterationCount = min(
+            names.count,
+            surnames.count,
+            emails.count,
+            phones.count
         )
+        
+        for index in 0..<iterationCount {
+            let person = Person(
+                name: names[index],
+                surname: surnames[index],
+                email: emails[index],
+                phoneNumber: phones[index]
+            )
+            persons.append(person)
+        }
+        
+        return persons
+    }
+    
+    enum Contact: String {
+        case email = "e-mail"
+        case phone = "phone"
     }
 }
