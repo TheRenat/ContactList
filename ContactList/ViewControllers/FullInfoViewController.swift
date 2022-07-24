@@ -9,11 +9,17 @@ import UIKit
 
 class FullInfoViewController: UIViewController {
 
+    @IBOutlet var contactPhoneLabel: UILabel!
+    @IBOutlet var contactEmailLabel: UILabel!
+    
+    var person: Person!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        title = person.fullName
+        contactPhoneLabel.text = "Phone:  \(person.phoneNumber)"
+        contactEmailLabel.text = "e-mail:  \(person.email)"
 
     }
 }
