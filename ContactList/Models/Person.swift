@@ -45,9 +45,9 @@ extension Person {
         
         return persons
     }
+}
     
-    enum Contact: String {
-        case email = "e-mail"
+    enum Contacts: String {
+        case email = "tray"
         case phone = "phone"
-    }
 }
