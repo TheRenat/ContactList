@@ -47,10 +47,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94210D66288DA7B800CD3D0A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				942C95AC2885EBD90024B323 /* Assets.xcassets */,
+				942C95A32885EBD80024B323 /* AppDelegate.swift */,
+				942C95A52885EBD80024B323 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		94210D67288DA7E500CD3D0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		94210D68288DA82000CD3D0A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				94A7264A288751650060D280 /* TabBarViewController.swift */,
+				94A726422886022F0060D280 /* ContactListViewController.swift */,
+				942C95A72885EBD80024B323 /* FullInfoViewController.swift */,
+				94A7264C288759AC0060D280 /* ContactTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		94210D69288DA84D00CD3D0A /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				942C95A92885EBD80024B323 /* Main.storyboard */,
+				942C95AE2885EBD90024B323 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
 		942C95972885EBD80024B323 = {
 			isa = PBXGroup;
 			children = (
 				942C95A22885EBD80024B323 /* ContactList */,
+				94210D69288DA84D00CD3D0A /* StoryBoards */,
+				94210D66288DA7B800CD3D0A /* App */,
+				942C95B12885EBD90024B323 /* Info.plist */,
 				942C95A12885EBD80024B323 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,18 +106,10 @@
 		942C95A22885EBD80024B323 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				942C95A32885EBD80024B323 /* AppDelegate.swift */,
-				942C95A52885EBD80024B323 /* SceneDelegate.swift */,
-				942C95A92885EBD80024B323 /* Main.storyboard */,
-				942C95A72885EBD80024B323 /* FullInfoViewController.swift */,
-				94A7264A288751650060D280 /* TabBarViewController.swift */,
-				94A726422886022F0060D280 /* ContactListViewController.swift */,
-				94A7264C288759AC0060D280 /* ContactTableViewController.swift */,
+				94210D68288DA82000CD3D0A /* ViewControllers */,
 				94A726492887211F0060D280 /* Services */,
 				94A7264628871FE00060D280 /* Models */,
-				942C95AC2885EBD90024B323 /* Assets.xcassets */,
-				942C95AE2885EBD90024B323 /* LaunchScreen.storyboard */,
-				942C95B12885EBD90024B323 /* Info.plist */,
+				94210D67288DA7E500CD3D0A /* Resources */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";

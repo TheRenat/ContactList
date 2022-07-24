@@ -31,7 +31,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.circle" catalog="system" id="rHo-dg-aYy"/>
-                    <navigationItem key="navigationItem" id="c7e-1i-NRE"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="c7e-1i-NRE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gx5-Vd-BGv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,7 +49,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="bBD-f6-j7O" kind="relationship" relationship="viewControllers" id="edG-GO-zHT"/>
-                        <segue destination="xHc-At-zuX" kind="relationship" relationship="viewControllers" id="ML2-cx-qRe"/>
+                        <segue destination="xHc-At-zuX" kind="relationship" relationship="viewControllers" id="hoy-dt-R72"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bk-gP-Cx0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -80,6 +80,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.2" catalog="system" id="QYv-Yj-LXR"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="0yI-Mu-JGA"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8A-l1-4Ls" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
