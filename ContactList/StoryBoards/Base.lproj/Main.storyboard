@@ -54,11 +54,28 @@
                     <connections>
                         <segue destination="bBD-f6-j7O" kind="relationship" relationship="viewControllers" id="edG-GO-zHT"/>
                         <segue destination="xHc-At-zuX" kind="relationship" relationship="viewControllers" id="hoy-dt-R72"/>
+                        <segue destination="46J-aG-jPi" kind="relationship" relationship="viewControllers" id="5Sh-ei-bDX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bk-gP-Cx0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2945" y="-2795"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="u8c-nK-0ec">
+            <objects>
+                <viewController id="46J-aG-jPi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DYl-Fj-M7G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4ha-re-EQC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="info.circle" catalog="system" id="CNB-x5-XBW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CgU-CX-5c9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2137" y="-1733"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="WvF-tb-0ep">
@@ -96,6 +113,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="cS1-CB-sSX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item 2" id="r2x-uo-5DV"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="056-Q0-Jkv"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="jbp-AO-4e5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -153,6 +171,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
